@@ -155,7 +155,7 @@ nav ul li a:hover {
 
 
 
-/* Section Contact */
+/* Section Contact 
 .contact {
     padding: 100px 0;
     background-color: #f8f9fa;
@@ -196,6 +196,124 @@ nav ul li a:hover {
     margin-bottom: 10px;
     font-size: 18px;
 }
+*/
+
+/* Section Contact (V2)*/
+.contact {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact-header {
+    margin-bottom: 50px;
+}
+
+.contact-header h2 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.section-divider {
+    width: 80px;
+    height: 4px;
+    background-color: #3498db;
+    margin: 0 auto 15px;
+}
+
+.contact-subtitle {
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* Conteneur des blocs de contact */
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Blocs individuels de contact */
+.contact-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    min-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.contact-box:hover {
+    transform: translateY(-5px);
+}
+
+.contact-icon {
+    font-size: 40px;
+    margin-right: 20px;
+    color: #3498db;
+}
+
+.contact-details h3 {
+    color: #2c3e50;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Bouton d'appel à l'action */
+.contact-cta {
+    margin-top: 30px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-box {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
 
 /* Pied de page */
 footer {
@@ -217,4 +335,106 @@ footer {
 
 .social-links a:hover {
     text-decoration: underline;
+}
+
+/* Section Présentation */
+.presentation {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.section-divider {
+    width: 80px;
+    height: 4px;
+    background-color: #3498db;
+    margin: 0 auto;
+}
+
+/* Conteneur principal en flex */
+.presentation-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+/* Colonne de texte */
+.presentation-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.intro-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* Blocs d'information stylisés */
+.info-box {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+    border-left: 4px solid #3498db;
+}
+
+.info-box h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.info-box p {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Colonne visuelle */
+.presentation-visual {
+    flex: 1;
+    display:flex;
+    justify-content: right;
+    align-items: flex-start;
+}
+
+.image-wrapper {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive : empiler les colonnes sur mobile */
+@media (max-width: 768px) {
+    .presentation-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-image {
+        max-height: 300px;
+        object-fit: cover;
+    }
 }
