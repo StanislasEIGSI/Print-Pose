@@ -57,7 +57,7 @@ nav ul li a:hover {
 /* Section Accueil */
 .hero {
     background-color: #f8f9fa;
-    padding: 150px 0 100px;
+    padding: 100px 0 10px;
     text-align: center;
 }
 
@@ -376,11 +376,12 @@ footer {
 }
 
 .intro-text {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.8;
     color: #555;
-    margin-bottom: 30px;
     text-align: justify;
+    margin-top: 15px;
+    margin: auto;
 }
 
 /* Blocs d'information stylisés */
@@ -411,6 +412,7 @@ footer {
     display:flex;
     justify-content: right;
     align-items: flex-start;
+    margin: auto;
 }
 
 .image-wrapper {
@@ -418,6 +420,7 @@ footer {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: auto;
 }
 
 .team-image {
