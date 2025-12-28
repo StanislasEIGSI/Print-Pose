@@ -17,53 +17,59 @@ body {
     padding: 0 20px;
 }
 
-/* En-tête */
-header {
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
+/* HEADER */
+.site-header {
+    background-color: #001145;
+    border-bottom: 1px solid #eaeaea;
 }
 
-header h1 {
-    font-size: 24px;
-    float: left;
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-nav ul {
-    float: right;
+/* LOGO */
+.logo img {
+    height: 150px;
+    display: block;
+}
+
+/* NAVIGATION */
+.main-nav ul {
     list-style: none;
-    margin-top: 10px;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: #fff;
+.main-nav a {
     text-decoration: none;
-    font-weight: 600;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    transition: color 0.2s ease;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.main-nav a:hover {
+    color: #0077ff;
 }
 
 /* Section Accueil */
 .hero {
-    background-color: #f8f9fa;
-    padding: 100px 0 10px;
+    background-color: #fff;
+    padding: 30px 0 30px;
     text-align: center;
 }
 
 .hero h2 {
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .hero p {
@@ -76,7 +82,7 @@ nav ul li a:hover {
 
 .btn {
     display: inline-block;
-    background-color: #3498db;
+    background-color: #254DC1; /* #254DC1 */
     color: #fff;
     padding: 12px 30px;
     text-decoration: none;
@@ -86,7 +92,7 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: #2980b9;
+    background-color: #3668ff; /* #001145 */
 }
 
 /* Portfolio */
@@ -97,7 +103,7 @@ nav ul li a:hover {
 
 .portfolio h2 {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-size: 32px;
 }
 
@@ -218,7 +224,7 @@ nav ul li a:hover {
 .section-divider {
     width: 80px;
     height: 4px;
-    background-color: #3498db;
+    background-color: #254DC1;
     margin: 0 auto 15px;
 }
 
@@ -226,7 +232,7 @@ nav ul li a:hover {
     font-size: 18px;
     color: #666;
     max-width: 600px;
-    margin: 0 auto 30px;
+    margin: 20px auto 30px;
 }
 
 /* Conteneur des blocs de contact */
@@ -258,7 +264,7 @@ nav ul li a:hover {
 .contact-icon {
     font-size: 40px;
     margin-right: 20px;
-    color: #3498db;
+    color: #254DC1;
 }
 
 .contact-details h3 {
@@ -268,7 +274,7 @@ nav ul li a:hover {
 }
 
 .contact-link {
-    color: #3498db;
+    color: #254DC1;
     text-decoration: none;
     font-weight: 600;
     font-size: 18px;
@@ -276,7 +282,7 @@ nav ul li a:hover {
 }
 
 .contact-link:hover {
-    color: #2980b9;
+    color: #254DC1;
     text-decoration: underline;
 }
 
@@ -287,7 +293,7 @@ nav ul li a:hover {
 
 .btn-primary {
     display: inline-block;
-    background-color: #3498db;
+    background-color: #254DC1;
     color: #fff;
     padding: 15px 40px;
     border-radius: 5px;
@@ -298,7 +304,7 @@ nav ul li a:hover {
 }
 
 .btn-primary:hover {
-    background-color: #2980b9;
+    background-color: #254DC1;
 }
 
 /* Responsive */
@@ -317,7 +323,7 @@ nav ul li a:hover {
 
 /* Pied de page */
 footer {
-    background-color: #2c3e50;
+    background-color: #001145;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -351,13 +357,13 @@ footer {
 .section-title h2 {
     font-size: 36px;
     color: #2c3e50;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .section-divider {
     width: 80px;
-    height: 4px;
-    background-color: #3498db;
+    height: 5px;
+    background-color: #254DC1;
     margin: 0 auto;
 }
 
@@ -391,7 +397,7 @@ footer {
     border-radius: 8px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
     margin-bottom: 25px;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid #254DC1;
 }
 
 .info-box h3 {
