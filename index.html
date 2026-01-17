@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
     <title>Pose d’adhésifs à Bordeaux | Print&Pose</title>
-    <meta name="description" content="Pose d’adhésifs professionnels à Bordeaux : vitrines, véhicules, murs et sols. Installation soignée, résultat durable. Devis gratuit.">
+    <meta name="description" content="Print&Pose : spécialiste de la pose d’adhésifs à Bordeaux. Vitrines, véhicules, signalétique, films solaires, décoration murale. Travail professionnel, finitions soignées, devis gratuit.">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Police -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/vnd.icon" href="Logo Oliver.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo/favicon_io/favicon-32x32.png">
+
+    <!-- Couleur du thème (mobile) -->
+    <meta name="theme-color" content="#001145">
 </head>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GLDZE7H0ED"></script>
 <script>
@@ -18,35 +30,69 @@
 
   gtag('config', 'G-GLDZE7H0ED');
 </script>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+
+    <span class="lightbox-prev">&#10094;</span>
+    <img class="lightbox-img" src="" alt="">
+    <span class="lightbox-next">&#10095;</span>
+
+    <div class="lightbox-caption"></div>
+</div>
+
 <body>
 <!-- En-tête -->
 <header class="site-header">
     <div class="header-container">
 
+        <!-- LOGO -->
         <a href="index.html" class="logo">
-            <img src="Logo Oliver.png" alt="Logo Oliver">
+            <img src="img/logo/print-pose-logo.png" alt="Print&Pose - Pose d'adhésifs à Bordeaux">
         </a>
 
+        <!-- NAVIGATION -->
         <nav class="main-nav">
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#presentation">Présentation</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
+        <!-- CTA TÉLÉPHONE -->
+        <a href="tel:06XXXXXXXX" class="cta-phone">📞 06 XX XX XX XX</a>
+
+        <!-- BURGER MENU (mobile) -->
+        <button class="burger" aria-label="Menu mobile">
+            <span></span><span></span><span></span>
+        </button>
+
     </div>
 </header>
 
-
 <!-- Section Accueil -->
 <section id="accueil" class="hero">
-        <h2>Print&Pose</h2>
-        <div class="section-divider"></div>
-        <h3>Entreprise spécialisée dans la pose d'adhésifs</h3>
-        <p>10 ans d'expertise à votre service</p>
-        <a href="#contact" class="btn">Nous contacter</a>
+    <div class="hero-content">
+
+        <h1>10 ans d’expertise a votre service</h1>
+
+        <p class="hero-subtitle">
+            Vitrines, véhicules, signalétique, films solaires et décoration adhésive.  
+            Travail professionnel, finitions soignées et devis gratuit sous 24h.
+        </p>
+
+        <p class="hero-subtitle">
+            Vous avez un projet ? Contactez-nous !
+        </p>
+
+        <a href="#contact" class="btn-primary hero-btn">Demander un devis</a>
+
+    </div>
 </section>
+
 
 <!-- Section Présentation -->
 <section id="presentation" class="presentation">
@@ -83,67 +129,82 @@
             <!-- Colonne visuelle avec image alignée -->
             <div class="presentation-visual">
                 <div class="image-wrapper">
-                    <img src="photos/PhotoPres.jpg" alt="Équipe Print&Pose en action" class="team-image">
-            </div>
-             <!-- Texte a rajouter si besoin
-            <div>
-                    <p class="intro-text">
-                    <strong>Print&Pose</strong> est une entreprise <strong>spécialisée dans la pose d’adhésifs</strong> pour tous types de supports.
-                    Avec <strong>10 ans d’expérience</strong>, nous proposons des <strong>solutions sur mesure</strong> pour répondre à vos besoins en signalétique, décoration, et personnalisation.
+                    <img src="img/presentation/photo-pres.jpg" alt="Équipe Print&Pose en action" class="team-image">
+                </div>
+             <!-- Texte a rajouter si besoin -->
+             <div class="presentation-text">
+                <div class="info-box">
+                    <h3>Pourquoi nous choisir ?</h3>
+                    <p>
+                        • Finitions professionnelles  
+                        • Délais rapides  
+                        • Matériaux de qualité  
+                        • Devis gratuit sous 24h  
                     </p>
-            </div>
-             -->
+                </div>
+             </div>
+
+             
         </div>
     </div>
 </section>
 
-
 <!-- Section Portfolio -->
 <section id="portfolio" class="portfolio">
     <div class="container">
-        <h2>Nos réalisations</h2>
+
+        <div class="section-title">
+            <h2>Nos réalisations</h2>
+            <div class="section-divider"></div>
+        </div>
+
         <div class="gallery">
-            <!-- Ligne 1 -->
+
             <div class="gallery-item">
-                <img src="photos/Portfolio/DecorationVitrineSaisonniere.jpeg" alt="Décoration de vitrines saisonnières">
+                <img src="img/portfolio/decoration-vitrine-saisonniere.jpeg" alt="Décoration de vitrines saisonnières">
                 <div class="caption">Décoration de vitrines saisonnières</div>
             </div>
+
             <div class="gallery-item">
-                <img src="photos/Portfolio/SignaletiqueBatiment.jpeg" alt="Signalétique de bâtiment">
+                <img src="img/portfolio/signaletique-batiment.jpeg" alt="Signalétique de bâtiment">
                 <div class="caption">Signalétique de bâtiment</div>
             </div>
+
             <div class="gallery-item">
-                <img src="photos/Portfolio/FilmSolaire.jpeg" alt="Films Solaires">
-                <div class="caption">Films Solaires</div>
+                <img src="img/portfolio/film-solaire.jpeg" alt="Film solaire">
+                <div class="caption">Film solaire</div>
             </div>
-            <!-- Ligne 2 -->
+
             <div class="gallery-item">
-                <img src="photos/Portfolio/SignaletiqueSecurite.jpeg" alt="Signalétique de sécurité">
+                <img src="img/portfolio/signaletique-securite.jpeg" alt="Signalétique de sécurité">
                 <div class="caption">Signalétique de sécurité</div>
             </div>
+
             <div class="gallery-item">
-                <img src="photos/Portfolio/DepoliEffetSable.jpeg" alt="Dépoli / effet sablé">
+                <img src="img/portfolio/depoli-effet-sable.jpeg" alt="Dépoli / effet sablé">
                 <div class="caption">Dépoli / effet sablé</div>
             </div>
+
             <div class="gallery-item">
-                <img src="photos/Portfolio/FlocageVehicule.jpeg" alt="Flocage de véhicules">
+                <img src="img/portfolio/flocage-vehicule.jpeg" alt="Flocage de véhicules">
                 <div class="caption">Flocage de véhicules</div>
             </div>
-            <!-- Ligne 3 -->
+
             <div class="gallery-item">
-                <img src="photos/Portfolio/DecorationMurale.jpeg" alt="Décoration murale">
+                <img src="img/portfolio/decoration-murale.jpeg" alt="Décoration murale adhésive">
                 <div class="caption">Décoration murale adhésive</div>
             </div>
 
             <div class="gallery-item">
-                <img src="photos/Portfolio/AdhesifDeSol.jpeg" alt="Adhesifs de sol">
+                <img src="img/portfolio/adhesif-sol.jpeg" alt="Adhésifs de sol">
                 <div class="caption">Adhésifs de sol</div>
             </div>
-            <!-- Ligne 4 -->
+
             <div class="gallery-item">
-                <img src="photos/Portfolio/PosePanneau.jpeg" alt="Pose de panneaux">
+                <img src="img/portfolio/pose-panneau.jpeg" alt="Pose de panneaux">
                 <div class="caption">Pose de panneaux</div>
             </div>
+
         </div>
     </div>
 </section>
@@ -152,39 +213,158 @@
 <!-- Section Contact -->
 <section id="contact" class="contact">
     <div class="container">
+
         <div class="contact-header">
             <h2>Contactez-nous</h2>
             <div class="section-divider"></div>
-            <p class="contact-subtitle">Une question ? Un projet ? N’hésitez pas à nous contacter.</p>
+            <p class="contact-subtitle">Une question ? Un projet ? Nous sommes à votre écoute.</p>
         </div>
 
         <div class="contact-content">
-            <!-- Blocs de contact avec icônes -->
+
+            <!-- Téléphone -->
             <div class="contact-box">
-                <div class="contact-icon">📞</div>
+                <div class="contact-icon">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.1 5.18 2 2 0 0 1 5.11 3h3a2 2 0 0 1 2 1.72c.12.81.37 1.6.72 2.34a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.88 6.88l1.27-1.27a2 2 0 0 1 2.11-.45c.74.35 1.53.6 2.34.72A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                </div>
+
                 <div class="contact-details">
                     <h3>Téléphone</h3>
-                    <a class="contact-link">06 21 65 95 39</a>
+                    <a href="tel:0621659539" class="contact-link">06 21 65 95 39</a>
+                    <p class="contact-note">Disponible du lundi au samedi</p>
                 </div>
             </div>
 
+            <!-- Email -->
             <div class="contact-box">
-                <div class="contact-icon">✉️</div>
+                <div class="contact-icon">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16v16H4z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                </div>
+
                 <div class="contact-details">
                     <h3>Email</h3>
-                    <a class="contact-link">printpose33@gmail.com</a>
+                    <a href="mailto:printpose33@gmail.com" class="contact-link">printpose33@gmail.com</a>
+                    <p class="contact-note">Réponse sous 24h</p>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
 
 
-    <!-- Pied de page -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Print&Pose. Tous droits réservés.</p>
+
+<!-- Pied de page -->
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <!-- Colonne 1 : Logo + baseline -->
+        <div class="footer-col">
+            <img src="img/logo/print-pose-logo.png" alt="Print&Pose" class="footer-logo">
+            <p class="footer-text">
+                Spécialiste de la pose d’adhésifs à Bordeaux : vitrines, véhicules, signalétique et décoration.
+            </p>
         </div>
-    </footer>
+
+        <!-- Colonne 2 : Navigation -->
+        <div class="footer-col">
+            <h3 class="footer-title">Navigation</h3>
+            <ul class="footer-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Colonne 3 : Contact -->
+        <div class="footer-col">
+            <h3 class="footer-title">Contact</h3>
+            <ul class="footer-contact">
+                <li>📞 <a href="tel:0621659539">06 21 65 95 39</a></li>
+                <li>✉️ <a href="mailto:printpose33@gmail.com">printpose33@gmail.com</a></li>
+                <li>📍 Bordeaux & Nouvelle-Aquitaine</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Bas de footer -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Print&Pose — Tous droits réservés.</p>
+    </div>
+</footer>
+
 </body>
+
+<script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.main-nav');
+
+    burger.addEventListener('click', () => {
+        nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const images = Array.from(document.querySelectorAll('.gallery-item img'));
+    const captions = Array.from(document.querySelectorAll('.gallery-item .caption'));
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.querySelector('.lightbox-img');
+    const lightboxCaption = document.querySelector('.lightbox-caption');
+    const closeBtn = document.querySelector('.lightbox-close');
+    const prevBtn = document.querySelector('.lightbox-prev');
+    const nextBtn = document.querySelector('.lightbox-next');
+
+    let currentIndex = 0;
+
+    // Ouvrir la lightbox
+    images.forEach((img, index) => {
+        img.addEventListener('click', () => {
+            currentIndex = index;
+            updateLightbox();
+            lightbox.style.display = 'flex';
+        });
+    });
+
+    // Met à jour l'image + description
+    function updateLightbox() {
+        lightboxImg.src = images[currentIndex].src;
+        lightboxImg.alt = images[currentIndex].alt;
+        lightboxCaption.textContent = captions[currentIndex].textContent;
+    }
+
+    // Navigation
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateLightbox();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateLightbox();
+    });
+
+    // Fermeture
+    closeBtn.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+    });
+
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            lightbox.style.display = 'none';
+        }
+    });
+
+});
+</script>
+
 </html>
