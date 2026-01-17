@@ -182,98 +182,113 @@ body, h1, h2, p, ul, li {
 }
 
 
-/* SECTION PRÉSENTATION */
+/* SECTION PRESENTATION */
 .presentation {
-    padding: 10px 0;
-    background-color: var(--grey-light);
+    padding: 80px 0;
+    background: #ffffff;
 }
 
-.section-title {
+.presentation .section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
     text-align: center;
-    margin-bottom: 50px;
 }
 
-.section-title h2 {
-    font-size: 36px;
-    color: var(--blue-dark);
-    margin-bottom: 10px;
-}
-
-.section-divider {
-    width: 80px;
+.presentation .section-divider {
+    width: 60px;
     height: 4px;
-    background-color: var(--blue-light);
-    margin: 0 auto;
+    background: #001145;
+    margin: 15px auto 40px;
+    border-radius: 2px;
 }
 
-/* Contenu en deux colonnes */
-.presentation-content {
+/* GRID */
+.presentation-grid {
     display: flex;
+    align-items: center;
+    gap: 60px;
     flex-wrap: wrap;
-    gap: 50px;
-    align-items: flex-start;
 }
 
-/* Colonne texte */
+/* TEXTE */
 .presentation-text {
     flex: 1;
-    min-width: 300px;
+    min-width: 320px;
 }
 
-/* Blocs d'information */
-.info-box {
-    background-color: white;
-    padding: 25px;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    border-left: 4px solid var(--blue-light);
-    margin-bottom: 25px;
+.subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
-.info-box h3 {
-    color: var(--blue-dark);
+.intro-text {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+/* POINTS FORTS */
+.strengths {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 25px;
+    margin-bottom: 35px;
+}
+
+.strength-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.strength-icon {
     font-size: 22px;
-    margin-bottom: 12px;
 }
 
-.info-box p {
-    color: var(--grey-dark);
-    line-height: 1.7;
+.strength-item p {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
 }
 
-/* Colonne image */
-.presentation-visual {
+/* ZONE D'INTERVENTION */
+.zone-box {
+    background: #f5f7fc;
+    border-left: 4px solid #001145;
+    padding: 18px 20px;
+    border-radius: 6px;
+}
+
+.zone-box h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.zone-box p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* IMAGE */
+.presentation-image {
     flex: 1;
-    min-width: 300px;
+    min-width: 320px;
     display: flex;
     justify-content: center;
 }
 
-.image-wrapper {
+.presentation-image img {
     width: 100%;
-    max-width: 500px;
-    border-radius: var(--radius);
-    overflow: hidden;
-    box-shadow: var(--shadow);
+    max-width: 480px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    object-fit: cover;
 }
 
-.team-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .presentation-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .info-box {
-        text-align: left;
-    }
-}
 
 
 /* SECTION PORTFOLIO */
